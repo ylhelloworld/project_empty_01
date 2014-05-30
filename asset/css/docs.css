@@ -1,0 +1,26 @@
+/********************************Time Line**********************************/
+.time-line> .row
+{
+	margin-left:20px; 
+	
+}
+
+.time-line> .row > .col-md-3
+{
+	color: #999;font-size: 25px;
+}
+
+.time-line>.row> .col-md-9
+{
+	border-left: solid 4px #ccc; padding-left:5px;
+}
+
+.time-line>.row> .col-md-9 > p > a
+{
+	color:#000; font-size:14px;
+}
+
+.time-line> hr
+{
+	font-size:20px; border-style:dotted; border-top-width:medium;
+}

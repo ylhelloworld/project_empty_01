@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="home_app">
+<head>
+
+    <!--JQuery-->
+    <script src="asset/js/jquery-1.9.1.js" type="text/javascript"></script>
+    
+    <!--BootStrap-->
+    <link href="asset/bootstrap_3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="asset/bootstrap_3.1/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="asset/font_awesome_4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css" /> 
+    <script src="asset/bootstrap_3.1/js/bootstrap.js" type="text/javascript"></script>
+    
+    <!--JQuery UI-->
+    <script src="asset/jquery_ui_1.9.2/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script> 
+    <link href="asset/jquery_ui_1.9.2/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" /> 
+    
+    <!--FoxiBox-->
+    <link href="asset/foxibox-0.2/style/jquery-foxibox-0.2.css" rel="stylesheet" type="text/css" /> 
+    <script src="asset/foxibox-0.2/script/jquery-foxibox-0.2.js" type="text/javascript"></script>
+ 
+    
+    
+    <!-- <link href="asset/css/docs.css" rel="stylesheet" type="text/css" />-->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="asset/bootstrap_3.1/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <script type="text/javascript">  
+      $(function () {
+             $.get("menu_white.htm", function(data){ 
+                 $("#menu").append(data); 
+              }); 
+         
+		     $("#maps").tabs();   
+		});
+    </script>
+
+</head>
+<body>
+    <div id="menu" style="margin-bottom: 60px;">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">  Find Title </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label"> User ID:</label>
+                            <div class="col-sm-8"> <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label"> Password:</label>
+                            <div class="col-sm-8"> <input type="password" class="form-control" id="inputPassword3" placeholder="Password"> </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <div class="checkbox">
+                                    <label> <input type="checkbox">  Remember me </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn btn-primary"> Sign in</button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="panel panel-primary">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Contry</a> <span class="divider">/</span></li>
+                        <li><a href="#">City</a> <span class="divider">/</span></li>
+                        <li class="active">Data</li>
+                    </ul>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div style="height: 300px;">
+                                    &nbsp;</div>
+                            </li>
+                            <li class="list-group-item">
+                                <h4> <i class="fa fa-list-ul"></i>Lorem Ipsum</h4>
+                                <div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <h4>
+                                    <i class="fa fa-list-ul"></i>Phasellus Mattis</h4>
+                                <div class="panel panel-default">
+                                    <div id="maps">
+                                        <ul>
+                                            <li><a href="#tabs-1">First</a></li>
+                                            <li><a href="#tabs-2">Second</a></li>
+                                            <li><a href="#tabs-3">Third</a></li>
+                                        </ul>
+                                        <div id="tabs-1">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div id="tabs-2">
+                                            Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet
+                                            ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum
+                                            bibendum.
+                                        </div>
+                                        <div id="tabs-3">
+                                            Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi
+                                            urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor
+                                            ullamcorper augue.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <h4>
+                                    <i class="fa fa-list-ul"></i>Show All Pictures</h4>
+                                <div class="panel-body" style="padding: 0px; margin: 0px;">
+                                    <a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 01" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 02" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 03" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 04" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 05" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 06" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 07" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 08" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 09" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 10" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 11" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 12" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 13" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 14" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 15" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a><a class=" thumbnail" href="http://placehold.it/600x400&text=Photo 16" rel="[gall1]"
+                                        title="first picture" style="float: left;">
+                                        <img src="http://placehold.it/180x120" alt="first picture" />
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
