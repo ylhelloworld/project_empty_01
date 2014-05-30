@@ -50,21 +50,6 @@
   position: absolute;
   z-index: 101;
   background: #fff;
-  
- display:block;
- padding:4px;
-line-height: 18px;
-border: 1px solid #ddd;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
--webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
--moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
--webkit-transition: all 0.2s ease-in-out;
--moz-transition: all 0.2s ease-in-out;
--o-transition: all 0.2s ease-in-out;
-transition: all 0.2s ease-in-out;
 }
 #foxibox_details {
 /* top and left are set in he script */
@@ -98,38 +83,38 @@ transition: all 0.2s ease-in-out;
   width: 20px;
   height: 16px;
   float: right;
-  background: url(../images/foxibox-arrows.gif) 0px -20px no-repeat;
+  background: url(../images/foxibox-arrows.gif) 0px 0px no-repeat;
 }
 #foxibox_nav #next {
   display: block;
   width: 20px;
   height: 16px;
   float: right;
-  background: url(../images/foxibox-arrows.gif) -20px -20px no-repeat;
+  background: url(../images/foxibox-arrows.gif) -20px 0px no-repeat;
 }
 #foxibox_details #scale {
   display: block;
   width: 20px;
   height: 16px;
   float: right;
-  background: url(../images/foxibox-arrows.gif) -60px -20px no-repeat;
+  background: url(../images/foxibox-arrows.gif) -60px 0px no-repeat;
 }
 #foxibox_details #close {
   display: block;
   width: 16px;
   height: 16px;
   float: right;
-  background: url(../images/foxibox-arrows.gif) -40px -20px no-repeat;
+  background: url(../images/foxibox-arrows.gif) -40px 0px no-repeat;
 }
 #foxibox_nav #prev:hover {
-  background-position: 0px 0px;
+  background-position: 0px -20px;
 }
 #foxibox_nav #next:hover {
-  background-position: -20px 0px;
+  background-position: -20px -20px;
 }
 #foxibox_details #scale:hover {
-  background-position: -60px 0px;
+  background-position: -60px -20px;
 }
 #foxibox_details #close:hover {
-  background-position: -40px 0px;
+  background-position: -40px -20px;
 }
