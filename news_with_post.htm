@@ -9,9 +9,7 @@
     <link href="asset/bootstrap_3.1/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
     <link href="asset/font_awesome_4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css" /> 
     <script src="asset/bootstrap_3.1/js/bootstrap.js" type="text/javascript"></script> 
-    
-
-    <link href="asset/css/docs.css" rel="stylesheet" type="text/css" />
+ 
     
     <!-- <link href="asset/css/docs.css" rel="stylesheet" type="text/css" />-->
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -36,9 +34,11 @@
                 <div class="col-md-3"> 
                     <div class="well" style="margin-top:20px;">
                         <h4> Blog Search</h4>
-                        <div class="input-append">
-                          <input class="col-span-2" type="text">
-                          <button class="btn" type="button">Go!</button>
+                         <div class="input-group">
+                              <input type="text" class="form-control">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                              </span>
                         </div>
                     </div>
                     <div class="well">
@@ -109,8 +109,10 @@
                     <!-- the comment box -->
                     <div class="well">
                         <h4>  Leave a Comment:</h4>
-                        <div><textarea class="col-md-12"></textarea></div>
-                        <div style="margin-top:5px;"><button type="submit" class="btn btn-primary"> Submit</button> </div>
+                        <div class="row">
+                            <div class="col-md-12"><textarea class="col-md-12"></textarea></div>
+                            <div class="col-md-12"style="margin-top:5px;"><button type="submit" class="btn btn-primary"> Submit</button> </div>
+                        </div>
                     </div>
                     <hr>
                     <!-- the comments -->
