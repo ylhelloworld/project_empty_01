@@ -3,7 +3,7 @@
 <head>
     <!--JQuery-->
 
-    <script src="asset/js/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="asset/js/jquery-1.7.2.js" type="text/javascript"></script> 
 
     <!--BootStrap-->
     <link href="asset/bootstrap_3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -22,14 +22,27 @@
     <!--[if lt IE 9]>
           <script src="asset/bootstrap_3.1/js/respond.js" type="text/javascript"></script>
     <![endif]-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+           //设置菜单,并设置位置
+	       $(".slide-list").slide({  type:"menu", titCell:".slide-item-title", targetCell:".slide-item-detail", delayTime:0, triggerTime:0, defaultPlay:false, returnDefault:true }); 
+           var panel_width=$("#panel_menu").width();
+           $(".slide-item-detail").css("left",panel_width); 
+           $(window).resize(function(){
+               var panel_width=$("#panel_menu").width();
+               $(".slide-item-detail").css("left",panel_width);
+           }); 
+      });
+      
     
+    </script>
    
 </head>
 <body> 
     <div class="container">
         <div class="row">
             <div class="col-md-3">  
-                  <div class="panel panel-primary" style="margin-top:10px;"> 
+                  <div id="panel_menu" class="panel panel-primary" style="margin-top:10px;"> 
                       <div class="panel-heading ">
                           <span>Information<em>（686310）</em></span>
                       </div> 
@@ -52,7 +65,7 @@
                                             </ul>
                                             <ul class="ul-230">
                                               <h4><li class="fa   fa-adn" style=" width:20px; float:none;"></li> Prvince</h4>
-                                              <li> <span><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a></span><span><a href="#" class="sub_width1">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#" class="sub_width1">GuangZhhou</a></span><span><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a></span> </li>
+                                              <li> <span><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a></span><span><a href="#" class="sub_width1">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#">GuangZhhou</a><a href="#" class="sub_width1">GuangZhhou</a></span></li>
                                             </ul>
                                             <ul class="ul-230">
                                               <h4><li class="fa   fa-envelope" style=" width:20px; float:none;"></li> Price</h4>
@@ -139,11 +152,6 @@
     </div>
 <div>
   
-</div>
-<script type="text/javascript">
-jQuery(".slide-list").slide({  type:"menu", titCell:".slide-item-title", targetCell:".slide-item-detail", delayTime:0, triggerTime:0, defaultPlay:false, returnDefault:true });
-jQuery("#slide").slide({  type:"menu", titCell:".list-group-item", targetCell:".list-group-item-detail", delayTime:0, triggerTime:0, defaultPlay:false, returnDefault:true });
-</script>
-    
+</div> 
 </body>
 </html>

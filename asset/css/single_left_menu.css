@@ -1,24 +1,18 @@
-﻿/*All Css*/
-
-
-body {
-	background:#fff;
-	font:normal 12px/22px 宋体;
-}
+﻿
 
 /*Panel*/
-.panel {
+#panel_menu {
 	border-width:2px;
 }
-.panel-heading{
+#panel_menu .panel-heading{
 	padding:4px 5px;
 	text-align:center;
 }
-.panel-heading span{
+#panel_menu .panel-heading span{
 	font-size:15px;
 	font-weight:bold;
 }
-.panel-heading em{
+#panel_menu .panel-heading em{
 	font-size:12px;
 	font-style:normal;
 	font-weight:bold;
@@ -43,7 +37,7 @@ body {
 .slide-list {
 	position:relative;
 	z-index:1;
-	width:260px; 
+	owidth:260px; 
 }
 .slide-list  >li{
 	border-bottom-style:dashed;
@@ -89,8 +83,7 @@ body {
 }
 .slide-list  .slide-item-detail {
 	display:none; 
-	position:absolute;
-	left:260px; 
+	position:absolute; 
 	top:0;
 	width:750px;
 	padding:0 0 20px 20px;
@@ -100,7 +93,8 @@ body {
 	border-left:none;  
 	border-color:#428bca;
     border-top-right-radius:6px;
-    border-bottom-right-radius:6px;
+    border-bottom-right-radius:6px; 
+    background-color:White;
     
 }
 .slide-list  .slide-item-detail h4 {

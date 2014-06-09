@@ -311,3 +311,42 @@
 [data-slide="prev"]{
     margin-right: 10px;
 } 
+/*****************************************************************************
+ * Line Header
+*****************************************************************************/ 
+.line-header{
+ margin-left:-20px;
+ margin-right:-20px;
+ border-top-style:double;
+ border-top-color:Black;
+ border-top-width:1px;
+ border-bottom-style:double;
+ border-bottom-color:Black;
+ border-bottom-width:1px;
+ margin-bottom:5px; 
+}
+.line-header h5
+{
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.line-header h4
+{
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.line-header h3
+{
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.line-header h2
+{
+	margin-top:3px;
+	margin-bottom:3px;
+}
+.line-header h1
+{
+	margin-top:3px;
+	margin-bottom:3px;
+}

@@ -1,0 +1,12 @@
+﻿.panel-body {
+ padding : 5px;
+}
+
+.news_list .col-md-4
+{
+ padding-right : 5px;
+ padding-left : 5px;
+}
+.news_list .list-group{
+	margin-bottom:0px;
+}
