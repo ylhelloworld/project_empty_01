@@ -3,6 +3,9 @@
 .panel-heading {
   padding : 7px 5px; 
 }
+.panel-body {
+ padding : 5px;
+}
 /*List Group */
 .list-group-item { 
  padding : 7px 5px; 
@@ -19,3 +22,6 @@
 .form-control{
     height:30px;
 }
+
+
+
